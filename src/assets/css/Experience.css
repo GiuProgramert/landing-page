@@ -1,0 +1,41 @@
+.experience {
+  padding: 20px;
+  border: 2px solid var(--third-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.experience-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.experience-header img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 55px;
+  box-shadow: var(--shadow);
+}
+
+.experience-body .skills {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.experience-body .skills li {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--text-color);
+  box-shadow: var(--shadow);
+}
+
+.divider {
+  border-top: 1px solid #cdcfe30d;
+}

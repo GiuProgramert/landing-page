@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #041172;
+  --secondary-color: #36418e;
+  --third-color: 	#6870aa;
+  --text-color: #cdcfe3;
+  --shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+* {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--third-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 30px;
+  align-items: center;
+}

@@ -1,0 +1,21 @@
+.respositories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.repo-error a {
+  padding-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.repo-error a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.repo-error i {
+  padding-right: 5px;
+}
