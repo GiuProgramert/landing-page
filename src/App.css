@@ -1,13 +1,18 @@
 :root {
   --primary-color: #041172;
   --secondary-color: #36418e;
-  --third-color: 	#6870aa;
+  --third-color: #6870aa;
   --text-color: #cdcfe3;
-  --shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 * {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -4,7 +4,7 @@ import Experience from "./Experience";
 
 function Experiencies() {
   return (
-    <Card>
+    <Card id="experiences" headerName="Experiencias">
       {experiences.map((experience) => (
         <Experience {...experience} key={experience.companyName} />
       ))}

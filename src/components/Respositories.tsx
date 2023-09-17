@@ -57,7 +57,7 @@ function Repositories() {
   );
 
   return (
-    <Card style={respositoriesStyles}>
+    <Card id="repositories" style={respositoriesStyles} headerName="Respositorios">
       {isLoading ? (
         <Loader />
       ) : !hasError ? (

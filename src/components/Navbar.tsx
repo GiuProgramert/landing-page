@@ -6,6 +6,12 @@ function Navbar() {
       <div className="navbar-name">Giuliano Díaz (GiuProgramert)</div>
       <ul className="navbar-social">
         <li>
+          <a href="#experiences">Experiencias</a>
+        </li>
+        <li>
+          <a href="#repositories">Repositorios</a>
+        </li>
+        <li>
           <i className="fa-brands fa-github"></i>
           <a href="https://github.com/GiuProgramert" target="_blank">
             Github
