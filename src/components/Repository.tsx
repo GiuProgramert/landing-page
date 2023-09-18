@@ -6,7 +6,7 @@ function Repository(props: PinnedRepo) {
 
   const languageStyles: React.CSSProperties = {
     color: props.languageColor,
-    border: `1px solid ${props.languageColor}`,
+    border: `2px solid ${props.languageColor}`,
   };
 
   return (

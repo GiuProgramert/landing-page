@@ -40,24 +40,17 @@ function Repositories() {
     [pinnedRepos]
   );
 
-  const respositoriesStyles: React.CSSProperties = useMemo(
-    () =>
-      isLoading
-        ? {
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }
-        : {
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "10px",
-          },
+  const repositoriesClass = useMemo(
+    () => (isLoading ? "repositories-loading" : "repositories"),
     [isLoading]
   );
 
   return (
-    <Card id="repositories" style={respositoriesStyles} headerName="Respositorios">
+    <Card
+      id="repositories"
+      className={repositoriesClass}
+      headerName="Respositorios"
+    >
       {isLoading ? (
         <Loader />
       ) : !hasError ? (

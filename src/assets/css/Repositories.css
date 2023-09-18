@@ -1,7 +1,13 @@
-.respositories {
+.repositories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+}
+
+.repositories-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .repo-error a {
@@ -18,4 +24,10 @@
 
 .repo-error i {
   padding-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .repositories {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
