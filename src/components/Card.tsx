@@ -11,9 +11,11 @@ interface CardParms {
 function Card({ id, style, children, className, headerName }: CardParms) {
   return (
     <article id={id} className="card">
-      <header className="card-header">
-        <h1>{headerName}</h1>
-      </header>
+      {!!headerName && (
+        <header className="card-header">
+          <h1>{headerName}</h1>
+        </header>
+      )}
       <div style={style} className={className}>
         {children}
       </div>
