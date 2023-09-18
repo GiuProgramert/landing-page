@@ -5,11 +5,13 @@ import Repository from "./Repository";
 import Loader from "./Loader";
 
 import "../assets/css/Repositories.css";
+import { useTranslation } from "react-i18next";
 
 function Repositories() {
   const [pinnedRepos, setPinnedRepos] = useState<PinnedRepo[]>([]);
   const [hasError, setHasError] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const { t } = useTranslation();
 
   const fetchPinnedRepos = () => {
     setIsLoading(true);
@@ -49,7 +51,7 @@ function Repositories() {
     <Card
       id="repositories"
       className={repositoriesClass}
-      headerName="Respositorios"
+      headerName={t('repositories')}
     >
       {isLoading ? (
         <Loader />
@@ -57,8 +59,7 @@ function Repositories() {
         memoPinnedRepos
       ) : (
         <p className="repo-error">
-          Un error inesperado ocurrio al intentar obtener los respositorios pero
-          puedes verlos en mi
+          {t('repoError')}
           <a href="https://github.com/GiuProgramert">
             <i className="fa-brands fa-github"></i>Github
           </a>
