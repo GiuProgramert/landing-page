@@ -1,15 +1,21 @@
+import { useTranslation } from "react-i18next";
 import "../assets/css/Navbar.css";
+import LangSwitcher from "./LangSwitcher";
 
 function Navbar() {
+  // TODO implement i18n change button
+  const { i18n, t } = useTranslation();
+
   return (
     <nav className="navbar">
       <div className="navbar-name">Giuliano Díaz (GiuProgramert)</div>
       <ul className="navbar-social">
+          <LangSwitcher />
         <li>
-          <a href="#experiences">Experiencias</a>
+          <a href="#experiences">{t("experiences")}</a>
         </li>
         <li>
-          <a href="#repositories">Repositorios</a>
+          <a href="#repositories">{t("repositories")}</a>
         </li>
         <li>
           <i className="fa-brands fa-github"></i>

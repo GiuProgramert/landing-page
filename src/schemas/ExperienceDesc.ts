@@ -1,10 +1,14 @@
 interface ExperienceDesc {
-  name: string;
+  nameES: string;
+  nameUS: string
   companyName: string;
   companyImage: string;
-  description: string;
-  date_from: string;
-  date_to: string;
+  descriptionES: string;
+  descriptionUS: string;
+  dateFromES: string;
+  dateFromUS: string;
+  dateToES: string;
+  dateToUS: string;
   skills: string[];
 }
 

@@ -52,6 +52,9 @@
   .navbar-social {
     gap: 20px;
     padding: 0px;
-    font-size: 13px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: center;
   }
 }

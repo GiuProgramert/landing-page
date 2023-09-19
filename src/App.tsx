@@ -1,9 +1,11 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
-import Experiencies from './components/Experiences';
-import Repositories from './components/Respositories';
-import Footer from './components/Footer';
+import Experiencies from "./components/Experiences";
+import Repositories from "./components/Respositories";
+import Footer from "./components/Footer";
+
+import "./i18n";
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
         <Experiencies />
         <Repositories />
       </main>
-      
+
       <Footer />
     </>
   );
