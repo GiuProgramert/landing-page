@@ -1,0 +1,19 @@
+.lang-icon {
+  object-fit: cover;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .lang-icon {
+    object-fit: cover;
+    width: 15px;
+    margin-right: 5px;
+  }
+}

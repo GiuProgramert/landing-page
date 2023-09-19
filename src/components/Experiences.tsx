@@ -1,5 +1,5 @@
 import Card from "./Card";
-import experiences from "../constans/experiences";
+import experiencesES from "../constants/experiences";
 import Experience from "./Experience";
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +8,7 @@ function Experiencies() {
 
   return (
     <Card id="experiences" headerName={t('experiences')}>
-      {experiences.map((experience) => (
+      {experiencesES.map((experience) => (
         <Experience {...experience} key={experience.companyName} />
       ))}
     </Card>

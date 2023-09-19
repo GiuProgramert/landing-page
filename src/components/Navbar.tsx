@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "../assets/css/Navbar.css";
+import LangSwitcher from "./LangSwitcher";
 
 function Navbar() {
   // TODO implement i18n change button
@@ -9,6 +10,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-name">Giuliano Díaz (GiuProgramert)</div>
       <ul className="navbar-social">
+          <LangSwitcher />
         <li>
           <a href="#experiences">{t("experiences")}</a>
         </li>
