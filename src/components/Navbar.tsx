@@ -4,7 +4,7 @@ import LangSwitcher from "./LangSwitcher";
 
 function Navbar() {
   // TODO implement i18n change button
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <nav className="navbar">
