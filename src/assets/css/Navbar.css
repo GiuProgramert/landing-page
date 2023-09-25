@@ -47,6 +47,7 @@
 
   .navbar-name {
     margin-top: 15px;
+    font-size: large;
   }
 
   .navbar-social {
@@ -55,6 +56,21 @@
     font-size: 16px;
     flex-wrap: wrap;
     width: 350px;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 320px) {
+  .navbar-name {
+    font-size: small;
+  }
+
+  .navbar-social {
+    gap: 20px;
+    padding: 0px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    width: 260px;
     justify-content: center;
   }
 }
