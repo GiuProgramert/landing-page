@@ -10,7 +10,7 @@ function Profile() {
   return (
     <Card className="profile-card">
       <div className="profile-photo">
-        <img src={myPhoto} alt="Giuliano Díaz's photo" />
+        <img src={myPhoto} alt="Giuliano Díaz (giuProgramert) profile picture" />
       </div>
       <div className="profile-description">
         <p>{t("descriptionFirst")}</p>
