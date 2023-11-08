@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import PinnedRepo from "../schemas/PinnedRepo";
+import PinnedRepo, { GithubRepo } from "../schemas/PinnedRepo";
 import Card from "./Card";
 import Repository from "./Repository";
 import Loader from "./Loader";
@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 
 function Repositories() {
   const [pinnedRepos, setPinnedRepos] = useState<PinnedRepo[]>([]);
+  const [githubRepos, setGithubRepos] = useState<GithubRepo[]>([])
   const [hasError, setHasError] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const { t } = useTranslation();
@@ -30,8 +31,26 @@ function Repositories() {
       });
   };
 
+  const fetchGithubRepos = () => {
+    setIsLoading(true);
+    fetch("https://api.github.com/users/GiuProgramert/repos")
+      .then(res => res.json())
+      .then((githubRepos: GithubRepo[]) => {
+        setGithubRepos(githubRepos);
+        setHasError(false);
+      })
+      .catch(err => {
+        console.log(err);
+        setHasError(true)
+      })
+      .finally(() => {
+        setIsLoading(false);
+      })
+  }
+
   useEffect(() => {
-    fetchPinnedRepos();
+    // fetchPinnedRepos();
+    fetchGithubRepos();
   }, []);
 
   const memoPinnedRepos = useMemo(

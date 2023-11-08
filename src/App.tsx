@@ -15,7 +15,7 @@ function App() {
       <main className="container">
         <Profile />
         <Experiencies />
-        <Repositories />
+        {/* <Repositories /> */}
       </main>
 
       <Footer />
