@@ -5,8 +5,7 @@ const experiences: ExperienceDesc[] = [
     nameES: "Desarrollador Full stack",
     nameUS: "Full stack Developer",
     companyName: "Paracan Limited",
-    companyImage:
-      "https://media.licdn.com/dms/image/C4D0BAQGzgHC_OQ1iBA/company-logo_100_100/0/1654955660833?e=1703116800&v=beta&t=9CDQVOpqTpSEp42jdlkk415sN_04MpHO5gUmxVxwaBw",
+    companyImage: "/src/assets/img/paracan-logo.jpeg",
     descriptionES: `
 - Desarrollo Frontend React.js
 - Desarrollo Backend Django, Django REST Framework
@@ -40,8 +39,7 @@ const experiences: ExperienceDesc[] = [
     nameES: "Programador Full stack",
     nameUS: "Full stack Programmert",
     companyName: "Codys S.A",
-    companyImage:
-      "https://media.licdn.com/dms/image/D4D0BAQFjp4wQNkmMSw/company-logo_100_100/0/1683046501272?e=1703116800&v=beta&t=dGNeK9OaqR51PpFPe_gWyeYr14dnBmTWD1jIqf05ZAo",
+    companyImage: "/src/assets/img/codys-logo.jpeg",
     descriptionES: `
 - Desarrollo en Laravel
 - Manejo de base de datos
