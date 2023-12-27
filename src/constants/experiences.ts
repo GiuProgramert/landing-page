@@ -1,11 +1,13 @@
 import ExperienceDesc from "../schemas/ExperienceDesc";
+import paracanLogo from "../assets/img/paracan-logo.jpeg";
+import codysLogo from "../assets/img/codys-logo.jpeg";
 
 const experiences: ExperienceDesc[] = [
   {
     nameES: "Desarrollador Full stack",
     nameUS: "Full stack Developer",
     companyName: "Paracan Limited",
-    companyImage: "/src/assets/img/paracan-logo.jpeg",
+    companyImage: paracanLogo,
     descriptionES: `
 - Desarrollo Frontend React.js
 - Desarrollo Backend Django, Django REST Framework
@@ -39,7 +41,7 @@ const experiences: ExperienceDesc[] = [
     nameES: "Programador Full stack",
     nameUS: "Full stack Programmert",
     companyName: "Codys S.A",
-    companyImage: "/src/assets/img/codys-logo.jpeg",
+    companyImage: codysLogo,
     descriptionES: `
 - Desarrollo en Laravel
 - Manejo de base de datos
