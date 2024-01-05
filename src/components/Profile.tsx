@@ -13,6 +13,7 @@ function Profile() {
         <img src={myPhoto} alt="Giuliano Díaz (giuProgramert) profile picture" />
       </div>
       <div className="profile-description">
+        <h1>{t('title')}</h1>
         <p>{t("descriptionFirst")}</p>
         <p>{t("descriptionSecond")}</p>
         <p>{t("descriptionThird")}</p>

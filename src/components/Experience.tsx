@@ -8,6 +8,7 @@ function Experience(props: ExperienceDesc) {
   const { i18n } = useTranslation();
 
   const isES = i18n.language === Langs.es;
+  const descriptions = isES ? props.descriptionES : props.descriptionUS;
 
   return (
     <section className="experience">
@@ -24,9 +25,11 @@ function Experience(props: ExperienceDesc) {
       </div>
       <hr className="divider" />
       <div className="experience-body">
-        <pre className="description">
-          {isES ? props.descriptionES : props.descriptionUS}
-        </pre>
+        <ul className="descriptions">
+          {descriptions.map((description) => (
+            <li key={description.substring(1, 20)} className="description">{description}</li>
+          ))}
+        </ul>
         <hr className="divider" />
         <ul className="skills">
           {props.skills.map((skill) => (

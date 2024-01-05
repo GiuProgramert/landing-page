@@ -14,9 +14,9 @@ function Navbar() {
         <li>
           <a href="#experiences">{t("experiences")}</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#repositories">{t("repositories")}</a>
-        </li>
+        </li> */}
         <li>
           <i className="fa-brands fa-github"></i>
           <a href="https://github.com/GiuProgramert" target="_blank">

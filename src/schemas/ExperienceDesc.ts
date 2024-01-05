@@ -3,8 +3,8 @@ interface ExperienceDesc {
   nameUS: string
   companyName: string;
   companyImage: string;
-  descriptionES: string;
-  descriptionUS: string;
+  descriptionES: string[];
+  descriptionUS: string[];
   dateFromES: string;
   dateFromUS: string;
   dateToES: string;

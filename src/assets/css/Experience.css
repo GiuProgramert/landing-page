@@ -13,7 +13,7 @@
 }
 
 .experience-header img {
-  border-radius: 50%;
+  border-radius: 15px;
   object-fit: cover;
   width: 55px;
   box-shadow: var(--shadow);
@@ -37,6 +37,10 @@
   box-shadow: var(--shadow);
 }
 
+.experience-company-data .name {
+  font-size: 25px;
+}
+
 .divider {
   border-top: 1px solid #cdcfe30d;
 }
@@ -46,9 +50,12 @@
     margin: 10px 0px;
   }
 
+  .experience-company-data .name {
+    font-size: 19px;
+  }
+
   .description {
     font-size: 13px;
-    overflow-x: scroll;
   }
 
   .experience-body .skills {
